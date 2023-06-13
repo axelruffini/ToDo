@@ -6,19 +6,22 @@
     <link rel="stylesheet" href="./assets/scss/style.css">
 </head>
 
-<body class="grupo_tarjetas">
-    <h1 class="t1">Lista de tareas (ToDo)</h1>
-    <form class="t3 inicio_tarjeta1">
-        <label for="nombre-tarea">Nombre de la tarea:</label>
-        <input type="text" id="nombre-tarea" name="nombre-tarea">
-        <br><br>
-        <label for="desc-tarea">Descripción de la tarea:</label>
-        <input type="text" id="desc-tarea" name="desc-tarea">
-        <br><br>
-        <button type="submit" class="btn" id="myBtn">Agregar</button>
-        <input type="text" id="busqueda" placeholder="Buscar tarea" class="busqueda">
-        <button id="btn-buscar" class="btn-buscar">Buscar</button>
+<body>
+    <div class="fotoPerfil"></div>
+    <h1 class="t1">Usuario</h1>
+    <form class="t3">
+        <div class="centrado"> 
+            <input type="text" id="nombre-tarea" name="nombre-tarea" placeholder="Tutulo">
+            <input type="text" id="desc-tarea" name="desc-tarea"placeholder="Descripcion">    
+            <button type="submit" class="btn" id="myBtn">Agregar</button>
+        </div>
+        <div>
+            <input type="text" id="busqueda" placeholder="Buscar tarea" class="busqueda">
+            <button id="btn-buscar" class="btn-buscar">Buscar</button>
+        </div>
     </form>
+
+
     <div id="contenedor-tareas" class="inicio_tarjeta2 ">
         <button id="btn-borrar-todas" class="btn-borrar-todas">Borrar todas las tareas</button>
     </div>
