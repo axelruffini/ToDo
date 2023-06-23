@@ -11,28 +11,30 @@
     <h1 class="t1">Usuario</h1>
     <form class="t3">
         <div class="centrado"> 
-            <input type="text" id="nombre-tarea" name="nombre-tarea" placeholder="Tutulo">
-            <input type="text" id="desc-tarea" name="desc-tarea"placeholder="Descripcion">    
-            <button type="submit" class="btn" id="myBtn">Agregar</button>
+            <input type="text" id="nombre-tarea" name="nombre-tarea" placeholder="Tutulo"> <!-- Input para el titulo de la tarea -->
+            <input type="text" id="desc-tarea" name="desc-tarea"placeholder="Descripcion"> <!-- Input para la descripcion de la tarea -->
+            <button type="submit" class="btn" id="myBtn">Agregar</button> <!-- Boton para agregar en los 2 campos anteriores -->
         </div>
         <div>
-            <input type="text" id="busqueda" placeholder="Buscar tarea" class="busqueda">
-            <button id="btn-buscar" class="btn-buscar">Buscar</button>
+            <input type="text" id="busqueda" placeholder="Buscar tarea" class="busqueda"> <!-- Input de busqueda -->
+            <button id="btn-buscar" class="btn-buscar">Buscar</button> <!-- Boton para buscar los datos ingresados anteriormente -->
         </div>
     </form>
 
 
     <div class="inicio_tarjeta2">
+        <!-- Boton para borrar todas las tareas -->
         <button id="btn-borrar-todas" class="btn-borrar-todas">Borrar todas las tareas</button>
     </div>
 
-    <div id="contenedor-tareas">
-        
+    <div id="contenedor-tareas">        
+        <!-- Aca se muestran las tareas -->
     </div>
 
     <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/swal.js"></script>
+
 </body>
 
 </html>
