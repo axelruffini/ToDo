@@ -45,9 +45,19 @@ main {
     flex-direction: column;
 }
 
-.inicio_tarjeta3 {
+/*.inicio_tarjeta3 {
     margin: 10px;
     @include tarjeta(8px, 10%, #ff502d)
+}*/
+.tarea-agregada{
+    margin: 10px;
+    @include tarjeta(auto, 60%, #ffffff)
+
+}
+
+.inicio_tarjeta3 {
+    margin: 10px;
+    @include tarjeta(auto, 80%, #ffffff)
 }
 
 input {

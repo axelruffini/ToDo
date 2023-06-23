@@ -130,7 +130,7 @@ btnBorrarTodas.addEventListener('click', async () => {
   }
 });
 
-async function cargarTareas() {
+async function cargarTareas() { 
   try {
     const tareasLocalStorage = obtenerTareasDelStorage();
     mostrarTareas(tareasLocalStorage);
@@ -149,6 +149,7 @@ function mostrarTareas(tareas) {
     descTareaNode.textContent = tarea.descripcion || '';
     tareaDiv.appendChild(nombreTareaNode);
     tareaDiv.appendChild(descTareaNode);
+    tareaDiv.classList.add('tarea-agregada');
     contenedorTareas.appendChild(tareaDiv);
     const index = tareas.indexOf(tarea);
     agregarFuncionalidadEliminarTarea(tareaDiv, tareas, index);
