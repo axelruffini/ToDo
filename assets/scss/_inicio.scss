@@ -25,7 +25,7 @@ main {
     @include textos(18px, justify);
 }
 
-.fotoPerfil{
+.fotoPerfil {
     position: relative;
     left: 45%;
     margin: 2%;
@@ -37,7 +37,7 @@ main {
 }
 
 
-.centrado{
+.centrado {
     position: relative;
     left: 40%;
     width: 18%;
@@ -45,24 +45,8 @@ main {
     flex-direction: column;
 }
 
-/*.inicio_tarjeta3 {
-    margin: 10px;
-    @include tarjeta(8px, 10%, #ff502d)
-}*/
-.tarea-agregada{
-    margin: 10px;
-    @include tarjeta(auto, 60%, #ffffff)
-
-}
-
-.inicio_tarjeta3 {
-    margin: 10px;
-    @include tarjeta(auto, 80%, #ffffff)
-}
-
 input {
-    margin-bottom: 2%;
-    margin-top: 2% ;
+    margin-top: 5%;
     width: 300px;
     border-radius: 15px;
     border-style: solid;
@@ -72,80 +56,35 @@ input {
     font-size: 20px;
     text-align: left;
     background-color: #ffffff;
-    border-color: #d8d8d8;
+    border-style: hidden;
 }
 
-.tarea{
-    padding-bottom: 5%;
-}
-
-.btn {
-    background-color: #44c767;
-    border-radius: 28px;
-    border: 1px solid #18ab29;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 16px;
-    padding: 10px 31px;
-    text-decoration: none;
+.cont-Tareas {
+    margin: 5%;
 }
 
 .btn-eliminar {
-    background-color: #cc3f23;
-    border-radius: 28px;
-    border: 1px solid #b83b22;
-    display: inline-block;
-    color: #ffffff;
-    font-size: 16px;
-    padding: 10px 31px;
-    text-decoration: none;
-    margin-bottom: 5%;
-    margin-top: 1%;
-
+    @include btn (#cc3f23)
 }
 
-.btn-borrar-todas{
-    background-color: #c74444;
-    border-radius: 28px;
-    border: 1px solid #c74444;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 16px;
-    padding: 10px 31px;
-    text-decoration: none;
-    margin-bottom: 10%;
+
+.btn-buscar {
+    @include btn (#2E3DC7)
 }
 
-.btn-estado{
-    background-color: #2e2488;
-    border-radius: 5px 20px 20px 5px;
-    border: 1px solid #2e2488;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 16px;
-    padding: 10px 31px;
-    text-decoration: none;
-    margin-left: 0.2%;
+.btn-agregar {
+    @include btn (#2E3DC7)
 }
 
-.btn-buscar{
-    background-color: #2e2488;
-    border-radius: 20px;
-    border: 1px solid #2e2488;
-    display: inline-block;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 15px;
-    padding: 10px;
-    text-decoration: none;
-    margin-left: 0.2%;
+//Icono de buscar
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 110,
+        'opsz' 408
 }
+
 
 .estado-tarea {
     font-family: Arial;
@@ -160,6 +99,6 @@ input {
     margin-left: 2%;
 }
 
-.test{
+.test {
     background-color: #000000;
 }

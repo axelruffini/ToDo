@@ -4,31 +4,27 @@
 <head>
     <title>Lista de tareas (ToDo)</title>
     <link rel="stylesheet" href="./assets/scss/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
-    <div class="fotoPerfil"></div>
-    <h1 class="t1">Usuario</h1>
     <form class="t3">
-        <div class="centrado"> 
+        <div> 
             <input type="text" id="nombre-tarea" name="nombre-tarea" placeholder="Tutulo"> <!-- Input para el titulo de la tarea -->
-            <input type="text" id="desc-tarea" name="desc-tarea"placeholder="Descripcion"> <!-- Input para la descripcion de la tarea -->
-            <button type="submit" class="btn" id="myBtn">Agregar</button> <!-- Boton para agregar en los 2 campos anteriores -->
+            <button type="submit" class="btn-agregar material-symbols-outlined" id="myBtn">done</button> <!-- Boton para agregar en los 2 campos anteriores -->
         </div>
+
+    <!--  
         <div>
-            <input type="text" id="busqueda" placeholder="Buscar tarea" class="busqueda"> <!-- Input de busqueda -->
-            <button id="btn-buscar" class="btn-buscar">Buscar</button> <!-- Boton para buscar los datos ingresados anteriormente -->
+            <input type="text" id="busqueda" placeholder="Buscar tarea" class="busqueda"> 
+            <button id="btn-buscar" class="btn-buscar material-symbols-outlined"> search </button>
+            
         </div>
+    -->
     </form>
 
-
-    <div class="inicio_tarjeta2">
-        <!-- Boton para borrar todas las tareas -->
-        <button id="btn-borrar-todas" class="btn-borrar-todas">Borrar todas las tareas</button>
-    </div>
-
-    <div id="contenedor-tareas">        
-        <!-- Aca se muestran las tareas -->
+    <div class="cont-Tareas" id="contenedor-tareas">     
+        
     </div>
 
     <script src="./js/main.js"></script>
