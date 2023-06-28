@@ -63,13 +63,20 @@ input {
     margin: 5%;
 }
 
-.contenedor-tarjeta{
+.contenedor-tarjeta {
     margin-bottom: 1%;
- @include tarjeta (auto, auto, white)
+    @include tarjeta (auto, auto, white)
 }
 
 .btn-eliminar {
-    @include btn (#cc3f23)
+    fill: red;
+    /* Cambia el color de relleno a rojo */
+    stroke: rgb(255, 0, 0);
+    /* Cambia el color del borde a negro */
+    width: 50px;
+    /* Ajusta el ancho del SVG a 24 píxeles */
+    height: 50px;
+    /* Ajusta la altura del SVG a 24 píxeles */
 }
 
 
