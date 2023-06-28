@@ -63,6 +63,11 @@ input {
     margin: 5%;
 }
 
+.contenedor-tarjeta{
+    margin-bottom: 1%;
+ @include tarjeta (auto, auto, white)
+}
+
 .btn-eliminar {
     @include btn (#cc3f23)
 }
