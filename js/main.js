@@ -25,6 +25,9 @@ formulario.addEventListener('submit', (evento) => { //Se carga la tarea
     guardarTareaEnStorage(nombreTareaTexto);
     nombreTareaInput.value = '';
   }
+  //else
+  // hacer que avise que no se intrujo nada
+
 });
 
 
