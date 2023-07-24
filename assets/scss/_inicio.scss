@@ -3,44 +3,19 @@
 
 body {
     background-color: #3A5A40;
+    display: flex
+
 }
 
-.t1 {
-    @include textos(40px, center);
+aside{
+    background-color: #58815768;
+    border-radius: 30px;
+    padding: 2%;
+    margin: 1%;
+    height: 100px;
+    width: 470px;
 }
 
-.t2 {
-    @include textos(35px, center);
-}
-
-.t3 {
-    @include textos(22px, center);
-    margin-bottom: 10px
-}
-
-.t4 {
-    @include textos(18px, justify);
-}
-
-.fotoPerfil {
-    position: relative;
-    left: 45%;
-    margin: 2%;
-    align-self: center;
-    background-color: #000000;
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-}
-
-
-.centrado {
-    position: relative;
-    left: 40%;
-    width: 18%;
-    display: flex;
-    flex-direction: column;
-}
 
 input {
     margin-top: 5%;
@@ -56,9 +31,15 @@ input {
     border-style: hidden;
 }
 
-.cont-Tareas {
-    margin: 5%;
+.t1 {
+    @include textos(40px, center);
 }
+
+.t2 {
+    @include textos(25px, center);
+}
+
+
 
 .contenedor-tarjeta {
     margin-bottom: 1%;
@@ -69,19 +50,9 @@ input {
 
 }
 
-.btn {
-    background-color: #000000;
-    border-bottom: #2e2488;
-    border-radius: 100%;
-}
-
-
-.btn-buscar {
-    @include btn (#2E3DC7)
-}
 
 .btn-agregar {
-    @include btn (#2E3DC7)
+    @include btn (#8c8fb000)
 }
 
 //Icono de buscar
@@ -91,18 +62,4 @@ input {
         'wght' 400,
         'GRAD' 110,
         'opsz' 408
-}
-
-
-.estado-tarea {
-    font-family: Arial;
-    background-color: #2e2488;
-    border-radius: 20px 5px 5px 20px;
-    border: 1px solid #2e2488;
-    display: inline-block;
-    color: #ffffff;
-    font-size: 16px;
-    padding: 10px;
-    text-decoration: none;
-    margin-left: 2%;
 }
