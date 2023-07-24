@@ -2,11 +2,7 @@
 @import "mixin";
 
 body {
-    background-color: #F6F6F6;
-}
-
-main {
-    background-color: #efefef;
+    background-color: #3A5A40;
 }
 
 .t1 {
@@ -56,7 +52,7 @@ input {
     padding: 20px;
     font-size: 20px;
     text-align: left;
-    background-color: #ffffff;
+    background-color: #588157;
     border-style: hidden;
 }
 
@@ -69,19 +65,14 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: space-between; //separa en una punta y en la otra el contenido
-    @include tarjeta (auto, auto, white)
+    @include tarjeta (auto, auto, #588157)
+
 }
 
-.btn-eliminar {
-
-    fill: red;
-    /* Cambia el color de relleno a rojo */
-    stroke: rgb(255, 0, 0);
-    /* Cambia el color del borde a negro */
-    width: 50px;
-    /* Ajusta el ancho del SVG a 24 píxeles */
-    height: 50px;
-    /* Ajusta la altura del SVG a 24 píxeles */
+.btn {
+    background-color: #000000;
+    border-bottom: #2e2488;
+    border-radius: 100%;
 }
 
 
@@ -114,8 +105,4 @@ input {
     padding: 10px;
     text-decoration: none;
     margin-left: 2%;
-}
-
-.test {
-    background-color: #000000;
 }

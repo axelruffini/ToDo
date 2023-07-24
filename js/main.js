@@ -15,7 +15,7 @@ formulario.addEventListener('submit', (evento) => { //Se carga la tarea
     
     // Agregar botón de eliminar con diseño personalizado
     const botonEliminar = document.createElement('button');
-    botonEliminar.innerHTML = '<img src="./assets/img/delete_FILL0_wght400_GRAD0_opsz48.svg" alt="Eliminar" class="btn-eliminar">'; //Imagen svg del boton borrar
+    botonEliminar.innerHTML = '<img src="./assets/img/Eliminar.svg" alt="Eliminar" class="btn">'; //Imagen svg del boton borrar
     botonEliminar.addEventListener('click', () => {
       eliminarTarea({ nombre: nombreTareaTexto });
     });
@@ -60,7 +60,7 @@ function mostrarTareas(tareas) { //Se enfoca en la creación de elementos HTML y
         // agrego el botón de eliminación
         const botonEliminar = document.createElement('button');
         botonEliminar.textContent = 'Eliminar';
-        botonEliminar.innerHTML = '<img src="./assets/img/delete_FILL0_wght400_GRAD0_opsz48.svg" alt="Eliminar" class="btn-eliminar">'; //Imagen svg del boton borrar
+        botonEliminar.innerHTML = '<img src="./assets/img/Eliminar.svg" alt="Eliminar" class="btn">'; //Imagen svg del boton borrar
         botonEliminar.addEventListener('click', () => {
           eliminarTarea(tarea);
         });
