@@ -47,7 +47,7 @@ input {
   font-size: 25px;
 }
 
-.contenedor-tarjeta {
+.nueva-tarjeta {
   margin-bottom: 1%;
   display: flex;
   flex-direction: row;
@@ -68,7 +68,7 @@ input {
   margin: 5%;
 }
 
-.btn-agregar {
+.btn {
   font-family: "Caprasimo", cursive;
   font-size: 30px;
   background-color: rgba(140, 143, 176, 0);
@@ -76,6 +76,10 @@ input {
   color: white;
   border-radius: 10%;
   border-style: hidden;
+}
+
+.btn-eliminar {
+  background-color: red;
 }
 
 .material-symbols-outlined {

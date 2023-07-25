@@ -1,97 +1,63 @@
-const formulario = document.querySelector('form'); 
-const nombreTareaInput = document.querySelector('#nombre-tarea');
-const contenedorTareas = document.querySelector('#contenedor-tareas');
+// Función para agregar una tarea
+function addTask() {
+  const taskInput = document.getElementById('taskInput');
+  const taskText = taskInput.value.trim();
 
-formulario.addEventListener('submit', (evento) => { //Se carga la tarea
-  evento.preventDefault();
-  const nombreTareaTexto = nombreTareaInput.value.trim();
+  if (taskText !== '') {
+    // Obtener tareas existentes de LocalStorage o inicializar un array vacío si es la primera vez
+    const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
-  if (nombreTareaTexto) { //Comprueba si se escribió algo
-    const tareaDiv = document.createElement('div');
-    const nombreTareaNode = document.createElement('h3');
-    nombreTareaNode.textContent = nombreTareaTexto;
-    tareaDiv.appendChild(nombreTareaNode);
-    tareaDiv.classList.add('contenedor-tarjeta'); //se agrega la clase contenedora para agregar diseño en cada una de las tareas (se la pone en esta linea asi se agrega al instante de cargarla)
-    
-    // Agregar botón de eliminar con diseño personalizado
-    const botonEliminar = document.createElement('button');
-    botonEliminar.innerHTML = '<img src="./assets/img/Eliminar.svg" alt="Eliminar" class="btn">'; //Imagen svg del boton borrar
-    botonEliminar.addEventListener('click', () => {
-      eliminarTarea({ nombre: nombreTareaTexto });
-    });
-    tareaDiv.appendChild(botonEliminar);
-    
-    contenedorTareas.appendChild(tareaDiv);
-    guardarTareaEnStorage(nombreTareaTexto);
-    nombreTareaInput.value = '';
-  }
-  //else
-  // hacer que avise que no se intrujo nada
+    // Agregar la nueva tarea al array
+    tasks.push(taskText);
 
-});
+    // Guardar el array actualizado en LocalStorage
+    localStorage.setItem('tasks', JSON.stringify(tasks));
 
-
-
-function guardarTareaEnStorage(nombreTarea) { //se la guada en el storage
-  const tareas = obtenerTareasDelStorage();
-  tareas.push({ nombre: nombreTarea });
-  guardarTareasEnStorage(tareas);
-}
-
-function guardarTareasEnStorage(tareas) { //SE GUARDA LA TAREA EN EL STORAGE
-  localStorage.setItem('tareas', JSON.stringify(tareas));
-}
-
-////////////////////////////// Se obtienen las tareas almacenadas en el storage y se cargan, finalmente las muestra
-
-function obtenerTareasDelStorage() {  //Se encarga de obtener las tareas almacenadas en el almacenamiento local. 
-  const tareas = JSON.parse(localStorage.getItem('tareas') || '[]');
-  return tareas;
-}
-
-function mostrarTareas(tareas) { //Se enfoca en la creación de elementos HTML y la presentación de las tareas en la página
-  for (const tarea of tareas) {
-    const tareaDiv = document.createElement('div');
-    const nombreTareaNode = document.createElement('h3');
-    nombreTareaNode.textContent = tarea.nombre;
-    tareaDiv.appendChild(nombreTareaNode);
-    tareaDiv.classList.add('contenedor-tarjeta'); // Agrega la clase "contenedor-tarjeta" al div de la tarea
-
-        // agrego el botón de eliminación
-        const botonEliminar = document.createElement('button');
-        botonEliminar.textContent = 'Eliminar';
-        botonEliminar.innerHTML = '<img src="./assets/img/Eliminar.svg" alt="Eliminar" class="btn">'; //Imagen svg del boton borrar
-        botonEliminar.addEventListener('click', () => {
-          eliminarTarea(tarea);
-        });
-        tareaDiv.appendChild(botonEliminar);
-
-    contenedorTareas.appendChild(tareaDiv);
+    // Limpiar el input y actualizar la lista de tareas mostradas
+    taskInput.value = '';
+    displayTasks();
   }
 }
 
-function eliminarTarea(tarea) {
-  const tareas = obtenerTareasDelStorage();
-  const indice = tareas.findIndex((t) => t.nombre === tarea.nombre);
-  if (indice !== -1) {
-    tareas.splice(indice, 1);
-    guardarTareasEnStorage(tareas);
-    limpiarContenedorTareas();
-    mostrarTareas(tareas);
+// Función para mostrar las tareas en el main
+function displayTasks() {
+  const taskList = document.getElementById('taskList');
+  taskList.innerHTML = '';
+
+  // Obtener las tareas de LocalStorage
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+  // Mostrar cada tarea en el main
+  tasks.forEach((task, index) => {
+    const taskElement = document.createElement('div');
+    taskElement.innerHTML = `
+    <div class="nueva-tarjeta">
+      <span>${task}</span>
+        <button onclick="deleteTask(${index})" class="btn">
+          <img src="./assets/img/Eliminar.svg" alt="">
+        </button>
+    </div>
+    `;
+    taskList.appendChild(taskElement);
+  });
+}
+
+// Función para eliminar una tarea
+function deleteTask(index) {
+  // Obtener las tareas de LocalStorage
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+  // Eliminar la tarea del array según el índice proporcionado
+  if (index >= 0 && index < tasks.length) {
+    tasks.splice(index, 1);
   }
+
+  // Guardar el array actualizado en LocalStorage
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+
+  // Actualizar la lista de tareas mostradas
+  displayTasks();
 }
 
-function limpiarContenedorTareas() {
-  while (contenedorTareas.firstChild) {
-    contenedorTareas.removeChild(contenedorTareas.firstChild);
-  }
-}
-
-
-function cargarTareas() { //Coordina la obtención y visualización de las tareas
-  const tareasLocalStorage = obtenerTareasDelStorage();
-  mostrarTareas(tareasLocalStorage);
-}
-
-window.addEventListener('load', cargarTareas); //Ejecuta la funcion cargarTareas()
-
+// Mostrar las tareas al cargar la página
+displayTasks();

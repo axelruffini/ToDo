@@ -7,26 +7,20 @@
 </head>
 
 <body>
-
-
     <aside>
-        <form class="t3">
-            <div> 
-                <input type="text" id="nombre-tarea" name="nombre-tarea" placeholder="Tutulo" class="t3"> <!-- Input para el titulo de la tarea -->
-                <button type="submit" class="btn-agregar" id="myBtn">
-                    <img src="./assets/img/Agregar.svg" alt="">
-                </button> <!-- Boton para agregar en los 2 campos anteriores -->
-            </div>
-        </form>
+        <input type="text" id="taskInput" placeholder="Agregar tarea...">
+        <button onclick="addTask()" class="btn">
+            <img src="./assets/img/Agregar.svg" alt="">
+        </button>
     </aside>
 
-    <main class="cont-Tareas" id="contenedor-tareas">
-        
-    </main>
-    <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/swal.js"></script>
 
+    <main id="taskList">
+        <!-- Aquí se mostrarán las tareas -->
+    </main>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
+

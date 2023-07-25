@@ -30,7 +30,7 @@ input {
     font-family: 'Caprasimo', cursive;
 }
 
-.t1 {
+.t1{
     @include textos(40px, center);
 }
 
@@ -40,19 +40,21 @@ input {
 
 
 
-.contenedor-tarjeta {
+.nueva-tarjeta {
     margin-bottom: 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-between; //separa en una punta y en la otra el contenido
     @include tarjeta (auto, auto, #588157)
-
-
 }
 
 
-.btn-agregar {
+.btn {
     @include btn (#8c8fb000)
+}
+
+.btn-eliminar{
+    background-color: red;
 }
 
 //Icono de buscar
