@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 
 @mixin tarjeta ($alto, $ancho, $color){
     display: flex;
     flex-direction: row;
     font-family: 'Caprasimo';
-    font-size: xx-large;
+    font-size: 40px;
     align-items: center;
     color: white;
+    font-family: 'Nerko One', cursive;
 
     padding: 30px;    
     border-radius: 100px;
@@ -19,14 +20,14 @@
 }
 
 @mixin textos ($size, $centrado){
-    font-family: 'Caprasimo', cursive;
+    font-family: 'Nerko One', cursive;
     color: rgb(255, 255, 255);
     text-align: $centrado;
     font-size: $size;
 }
 
 @mixin btn ($color){
-    font-family: 'Caprasimo', cursive;
+    font-family: 'Nerko One', cursive;
     font-size: 30px;
     background-color: $color;
     padding: 1%;

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -30,18 +30,20 @@ input {
   background-color: #588157;
   border-radius: 100px;
   border-style: hidden;
-  font-family: "Caprasimo", cursive;
+  font-family: "Nerko One", cursive;
+  color: white;
+  font-size: 30px;
 }
 
 .t1 {
-  font-family: "Caprasimo", cursive;
+  font-family: "Nerko One", cursive;
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 40px;
 }
 
 .t2 {
-  font-family: "Caprasimo", cursive;
+  font-family: "Nerko One", cursive;
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 25px;
@@ -55,9 +57,10 @@ input {
   display: flex;
   flex-direction: row;
   font-family: "Caprasimo";
-  font-size: xx-large;
+  font-size: 40px;
   align-items: center;
   color: white;
+  font-family: "Nerko One", cursive;
   padding: 30px;
   border-radius: 100px;
   height: auto;
@@ -69,17 +72,13 @@ input {
 }
 
 .btn {
-  font-family: "Caprasimo", cursive;
+  font-family: "Nerko One", cursive;
   font-size: 30px;
   background-color: rgba(140, 143, 176, 0);
   padding: 1%;
   color: white;
   border-radius: 10%;
   border-style: hidden;
-}
-
-.btn-eliminar {
-  background-color: red;
 }
 
 .material-symbols-outlined {

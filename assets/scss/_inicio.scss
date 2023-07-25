@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 @import "mixin";
 
 body {
@@ -27,7 +27,9 @@ input {
     background-color: #588157;
     border-radius: 100px;
     border-style: hidden;
-    font-family: 'Caprasimo', cursive;
+    font-family: 'Nerko One', cursive;
+    color: white;
+    font-size: 30px
 }
 
 .t1{
@@ -53,9 +55,6 @@ input {
     @include btn (#8c8fb000)
 }
 
-.btn-eliminar{
-    background-color: red;
-}
 
 //Icono de buscar
 .material-symbols-outlined {
