@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
 * {
   margin: 0;
@@ -7,17 +7,27 @@
 }
 
 body {
-  background: rgb(58, 90, 64);
-  background: linear-gradient(90deg, rgb(58, 90, 64) 0%, rgb(31, 49, 34) 100%);
+  background: #1C1B1F;
   display: flex;
 }
 
 aside {
-  background-color: rgba(88, 129, 87, 0.4078431373);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 30px;
   padding: 2%;
   margin: 1%;
   width: 470px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #324E37;
+  border-radius: 180px 0px 0px 180px;
+  width: 900px;
+  align-items: center;
 }
 
 input {
@@ -25,25 +35,24 @@ input {
   width: 300px;
   box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.11);
   padding: 40px;
-  font-size: 20px;
   text-align: left;
   background-color: #588157;
   border-radius: 100px;
   border-style: hidden;
-  font-family: "Nerko One", cursive;
+  font-family: "Comfortaa", cursive;
   color: white;
   font-size: 30px;
 }
 
 .t1 {
-  font-family: "Nerko One", cursive;
+  font-family: "Comfortaa", cursive;
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 40px;
 }
 
 .t2 {
-  font-family: "Nerko One", cursive;
+  font-family: "Comfortaa", cursive;
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 25px;
@@ -59,8 +68,9 @@ input {
   font-family: "Caprasimo";
   font-size: 40px;
   align-items: center;
+  justify-content: space-between;
   color: white;
-  font-family: "Nerko One", cursive;
+  font-family: "Comfortaa", cursive;
   padding: 30px;
   border-radius: 100px;
   height: auto;
@@ -72,7 +82,7 @@ input {
 }
 
 .btn {
-  font-family: "Nerko One", cursive;
+  font-family: "Comfortaa", cursive;
   font-size: 30px;
   background-color: rgba(140, 143, 176, 0);
   padding: 1%;

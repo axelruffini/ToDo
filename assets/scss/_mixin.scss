@@ -6,8 +6,9 @@
     font-family: 'Caprasimo';
     font-size: 40px;
     align-items: center;
+    justify-content: space-between;
     color: white;
-    font-family: 'Nerko One', cursive;
+    font-family: 'Comfortaa', cursive;
 
     padding: 30px;    
     border-radius: 100px;
@@ -17,17 +18,18 @@
     height: 80px;
     width: 500px;
     margin: 5%;
+
 }
 
 @mixin textos ($size, $centrado){
-    font-family: 'Nerko One', cursive;
+    font-family: 'Comfortaa', cursive;
     color: rgb(255, 255, 255);
     text-align: $centrado;
     font-size: $size;
 }
 
 @mixin btn ($color){
-    font-family: 'Nerko One', cursive;
+    font-family: 'Comfortaa', cursive;
     font-size: 30px;
     background-color: $color;
     padding: 1%;
