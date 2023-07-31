@@ -24,6 +24,7 @@ main{
     border-radius: 180px 0px 0px 180px;
     width: 900px;
     align-items: center;
+    padding: 5%;
 }
 
 input {
@@ -48,21 +49,16 @@ input {
     @include textos(25px, center);
 }
 
-
-
 .nueva-tarjeta {
-    margin-bottom: 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-between; //separa en una punta y en la otra el contenido
-    @include tarjeta (auto, auto, #588157)
+    @include tarjeta (80px, 500px, #588157)
 }
-
 
 .btn {
     @include btn (#8c8fb000)
 }
-
 
 //Icono de buscar
 .material-symbols-outlined {

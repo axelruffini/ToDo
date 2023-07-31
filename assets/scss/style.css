@@ -28,6 +28,7 @@ main {
   border-radius: 180px 0px 0px 180px;
   width: 900px;
   align-items: center;
+  padding: 5%;
 }
 
 input {
@@ -59,7 +60,6 @@ input {
 }
 
 .nueva-tarjeta {
-  margin-bottom: 1%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -68,17 +68,14 @@ input {
   font-family: "Caprasimo";
   font-size: 40px;
   align-items: center;
-  justify-content: space-between;
   color: white;
   font-family: "Comfortaa", cursive;
   padding: 30px;
   border-radius: 100px;
-  height: auto;
-  width: auto;
-  background-color: #588157;
   height: 80px;
   width: 500px;
-  margin: 5%;
+  background-color: #588157;
+  margin: 0% 5% 2% 5%;
 }
 
 .btn {
