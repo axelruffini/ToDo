@@ -90,4 +90,33 @@ input {
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 110, "opsz" 408;
+}
+
+@media (max-width: 1000px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    border-radius: 80px 80px 0px 0;
+    width: 85%;
+    align-items: center;
+    padding: 5%;
+  }
+  .nueva-tarjeta {
+    display: flex;
+    flex-direction: row;
+    font-family: "Caprasimo";
+    font-size: 40px;
+    align-items: center;
+    color: white;
+    font-family: "Comfortaa", cursive;
+    padding: 30px;
+    border-radius: 100px;
+    height: 1%;
+    width: 90%;
+    background-color: #588157;
+    margin: 0% 5% 2% 5%;
+  }
 }/*# sourceMappingURL=style.css.map */
