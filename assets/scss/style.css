@@ -99,7 +99,7 @@ input {
     align-items: center;
   }
   main {
-    border-radius: 80px 80px 80px 80px;
+    border-radius: 80px;
     width: 85%;
     align-items: center;
     padding: 5%;
