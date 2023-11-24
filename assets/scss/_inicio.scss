@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 @import "mixin";
 
 body {
     background: #1C1B1F;
-    display: flex
-
+    display: flex;
+    flex-direction: row;
 }
 
 aside{
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     border-radius: 30px;
-    padding: 2%;
-    margin: 1%;
-    width: 470px;
+    padding: 5%;
+    height:85vh;
 }
 
 main{
@@ -25,6 +24,7 @@ main{
     width: 900px;
     align-items: center;
     padding: 5%;
+    height: 100%;
 }
 
 input {
@@ -36,7 +36,7 @@ input {
     background-color: #588157;
     border-radius: 100px;
     border-style: hidden;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Nunito', sans-serif;
     color: white;
     font-size: 30px
 }
@@ -46,8 +46,10 @@ input {
 }
 
 .t2 {
-    @include textos(25px, center);
+    @include textos(30px, center);
+    color: rgb(219, 219, 219);
 }
+
 
 .nueva-tarjeta {
     display: flex;

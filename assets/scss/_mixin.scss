@@ -1,32 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
-
-@mixin tarjeta ($alto, $ancho, $color){
-    display: flex;
-    flex-direction: row;
-    font-family: 'Caprasimo';
-    font-size: 40px;
-    align-items: center;
-    color: white;
-    font-family: 'Comfortaa', cursive;
-
-    padding: 30px;    
-    border-radius: 100px;
-    height: $alto;
-    width: $ancho;
-    background-color: $color;
-    margin: 0% 5% 2% 5%;
-
-}
-
 @mixin textos ($size, $centrado){
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Nunito', sans-serif;
     color: rgb(255, 255, 255);
     text-align: $centrado;
     font-size: $size;
 }
 
 @mixin btn ($color){
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Nunito', sans-serif;
     font-size: 30px;
     background-color: $color;
     padding: 1%;
