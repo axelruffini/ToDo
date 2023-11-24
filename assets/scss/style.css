@@ -12,12 +12,12 @@ body {
 
 aside {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  border-radius: 30px;
   padding: 5%;
+  background-color: red;
   height: 85vh;
+  justify-content: space-between;
 }
 
 main {
@@ -40,7 +40,7 @@ input {
   background-color: #588157;
   border-radius: 100px;
   border-style: hidden;
-  font-family: "Comfortaa", cursive;
+  font-family: "Nunito", sans-serif;
   color: white;
   font-size: 30px;
 }
