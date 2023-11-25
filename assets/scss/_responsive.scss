@@ -2,20 +2,29 @@
 
     body{
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
     main{
-
-        border-radius: 80px;
+        border-radius: 50px 50px 0px 0px;
         width: 85%;
         align-items: center;
         padding: 5%;
     }
 
+    aside{
+        height: 400px;
+    }
+
     .nueva-tarjeta {
-        @include tarjeta (1%, 90%, #588157)
+        @include tarjeta (50px, 90%, #588157);
+        margin-bottom: 20px;
+        font-size:larger;
+    }
+
+    input{
+        width: 60%;
+        height: 10px;
     }
     
 }

@@ -44,6 +44,18 @@ input {
   font-size: 30px;
 }
 
+input::-moz-placeholder {
+  color: #a9c5a9;
+}
+
+input::placeholder {
+  color: #a9c5a9;
+}
+
+input:focus {
+  border-style: none;
+}
+
 .t1 {
   font-family: "Nunito", sans-serif;
   color: rgb(255, 255, 255);
@@ -62,6 +74,7 @@ input {
 .nueva-tarjeta {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   display: flex;
   flex-direction: row;
@@ -95,14 +108,16 @@ input {
 @media (max-width: 1000px) {
   body {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   main {
-    border-radius: 80px;
+    border-radius: 50px 50px 0px 0px;
     width: 85%;
     align-items: center;
     padding: 5%;
+  }
+  aside {
+    height: 400px;
   }
   .nueva-tarjeta {
     display: flex;
@@ -114,9 +129,15 @@ input {
     font-family: "Nunito", sans-serif;
     padding: 30px;
     border-radius: 100px;
-    height: 1%;
+    height: 50px;
     width: 90%;
     background-color: #588157;
     margin: 0% 5% 2% 5%;
+    margin-bottom: 20px;
+    font-size: larger;
+  }
+  input {
+    width: 60%;
+    height: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

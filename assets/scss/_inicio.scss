@@ -40,6 +40,15 @@ input {
     font-size: 30px
 }
 
+input::placeholder {
+    color:#a9c5a9;
+}
+
+input:focus{
+    border-style: none;
+}
+
+
 .t1{
     @include textos(40px, center);
 }
@@ -49,10 +58,10 @@ input {
     color: rgb(219, 219, 219);
 }
 
-
 .nueva-tarjeta {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between; //separa en una punta y en la otra el contenido
     @include tarjeta (80px, 500px, #588157)
 }
